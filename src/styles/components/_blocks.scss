@@ -46,6 +46,12 @@
     img {
         max-width: 616px;
         max-height: 178px;
+        &.auto-size {
+            max-width: none !important;
+            max-height: none !important;
+            width: initial !important;
+            height: auto !important;
+        }
     }
     .g-sized {
         max-width: 615px;
@@ -256,6 +262,32 @@
 }
 .large-sc {
     display: block;
+}
+
+
+/*-
+.world-grey-bg {
+   position:relative;
+   &:before {
+       content: ("");
+       position:absolute;
+       bottom:0;
+       left: -15%;
+       width: 100vw;
+       height: 590px;
+       z-index:-1;
+       background-color:#F8F9FA;
+   }
+}-*/
+
+.aemo-bg-world-1 {
+    position:relative;
+    .bg-img {
+        position:absolute;
+        top:-50px;
+        left: -15%;
+        z-index:-1;
+    }
 }
 
 
