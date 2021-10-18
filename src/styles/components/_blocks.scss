@@ -10,7 +10,7 @@
 }
 
 .gray {
-    margin-top: 80px;
+    background-color:#F8F9FA;
 }
 
 .border-liner {
@@ -47,14 +47,14 @@
         max-width: 616px;
         max-height: 178px;
         &.auto-size {
-            max-width: none !important;
+            max-width: fit-content !important;
             max-height: none !important;
             width: initial !important;
             height: auto !important;
         }
     }
     .g-sized {
-        max-width: 615px;
+        max-width: fit-content;
         max-height: 345px;
     }
     .block-one-t-one {
@@ -290,6 +290,11 @@
     }
 }
 
+.custom-zindex {
+    &.num-2 {
+            z-index: 2;
+    }
+} 
 
 @media only screen and (max-width: 950px) {
     .crypto-f {
