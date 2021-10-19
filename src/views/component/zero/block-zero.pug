@@ -1,24 +1,31 @@
-.container
+.container-full
     .content-wrap.content-0
-        .row.mb-0.bg
-            .col-lg-6.px-0
-                .text-box 
-                    article.f-medium.h-42 When a solar company sold me panels for my house, they also sold me a battery. It’s been sitting in my basement for two years not doing a whole lot.
-                    img.auto-size(src="/aemo-gradient-indis.png" alt="aeomo-gradient")
-            .col-lg-6.px-0
-                img(src="/battaries.png" alt="Battaries")
-        .row.mb-0.bg.gray.pt-0.mt-5.pb-5.mb-5
-            .col-lg-6.px-0
-                .text-box
-                    h1.f-medium Now with Project EDGE, My solar system and battery are being used by different utilities to help balance the grid 
-                    article.f-larger And they’re Paying me  to do it!
-            .col-lg-6.px-0
-                img(src="/block-one-house.png" alt="house")
-        .row.mb-0.bg.col-reversed
-            .col-lg-6.px-0
-                img(src="/hexagon.png" alt="house").block-zero-img
-            .col-lg-6.px-0
-                .text-box.to-right.s-t-center
-                    h1.f-medium and I'm helping to
-                    h1.f-large <u>Decarbonize the grid</u>
-                    //--article.f-medium.h-42 because my battery is being used to balance the grid—not a fossil-fuel powered plant...
+        .container
+            .row.mb-0.bg
+                .col-lg-6.px-0
+                    .text-box.justify-content-start 
+                        h4.subtitle-secondary.px-3 When a solar company sold me panels for my house, they also sold me a battery. It’s been sitting in my basement for two years not doing a whole lot.
+                        //- img.auto-size(src="/aemo-gradient-indis.png" alt="aemo gradient text")
+                .col-lg-6.px-0
+                    img(src="/battaries.png" alt="Battaries")
+        .container-full.row.mb-0.bg.gray.pt-0.mt-5.pb-5.mb-5
+            .content-wrap.content-0
+                .container
+                    .content-wrap.content-0
+                        .row    
+                            .col-lg-6
+                                .text-box
+                                    h4.subtitle-secondary.mb-4  Now with Project EDGE, My solar system and battery are being used by different utilities to help balance the grid 
+                                    h3.body-text And they’re <u>Paying me</u> to do it!
+                            .col-lg-6.px-0
+                                img(src="/block-one-house.png" alt="house")
+        .container
+            .content-wrap.content-0                
+                .row.mb-0.col-reversed
+                    .col-lg-6
+                        img(src="/hexagon.png" alt="house")
+                    .col-lg-6.px-0
+                        .text-box.to-right.s-t-center
+                            h4.subtitle-secondary and I'm helping to
+                            h3.body-text <u>Decarbonize the grid</u>
+                            //--article.f-medium.h-42 because my battery is being used to balance the grid—not a fossil-fuel powered plant...
