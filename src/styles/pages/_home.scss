@@ -179,8 +179,14 @@
         transform: translateX(-50%) translateY(40px);
         text-align: center;
         opacity: 0;
-        
 
+        br {
+          display: initial;
+          @include media('<=phone') {
+            display: none;
+          }
+        }
+        
         small {
           text-transform:none !important;
           @include font-subheading2($size: $font-size-small);
@@ -198,7 +204,7 @@
       }
 
       .s-zero {
-        max-width: 1167px;
+        max-width: 1200px;
       }
 
       .s-one {
@@ -374,6 +380,7 @@
 .subtitle-secondary {
   text-transform: none !important;
   color: $color-darkpurple;
+  opacity: 80%;
   font-weight: 400;
   @include font-body($size: $font-size-subheading2, $weight: $font-weight-body);
 
@@ -384,6 +391,10 @@
 
   u {
     color: $color-primary;
+  }
+
+  strong {
+    font-weight: 600;
   }
 
   small {
@@ -532,6 +543,26 @@
 .underline {
   text-decoration: underline;
 }
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.list-position {
+  left: 50px;
+  top: 50px;
+
+  @include media('<=phone') {
+  left: 20px;
+  top: 20px;
+  }
+
+}
+
 
 .dnsp-tip {
   position: relative;
