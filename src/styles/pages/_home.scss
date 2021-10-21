@@ -562,14 +562,14 @@
 .list-position {
   left: 50px;
   top: 50px;
+  width: 20%;
 
   @include media('<=phone') {
   left: 20px;
   top: 20px;
+  width: 60%;
   }
-
 }
-
 
 .dnsp-tip {
   position: relative;
