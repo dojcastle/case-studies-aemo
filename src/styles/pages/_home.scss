@@ -562,12 +562,12 @@
 .list-position {
   left: 50px;
   top: 50px;
-  width: 20%;
+  width: 200px;
 
   @include media('<=phone') {
   left: 20px;
   top: 20px;
-  width: 60%;
+  width: 120px;
   }
 }
 
