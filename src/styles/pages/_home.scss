@@ -417,6 +417,46 @@
   }
 }
 
+.subtitle-secondary-3 {
+  text-transform: none !important;
+  color: $color-darkpurple;
+  opacity: 80%;
+  font-weight: 400;
+  @include font-body($size: $font-size-subheading3, $weight: $font-weight-body);
+
+  @include media('<=phone') {
+    @include font-subheading2($size: 1.1rem);
+    line-height: normal !important; 
+  }
+
+  u {
+    color: $color-primary;
+  }
+
+  br {
+    display: initial;
+    @include media('<=phone') {
+      display: none;
+    }
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  small {
+    @include font-body($size: $font-size-subheading2, $weight: $font-weight-body);
+    text-transform: none !important;
+    @include media('<=phone') {
+      @include font-subheading2($size: 0.8rem);
+    }
+  }
+
+  span {
+    color: $color-primary;
+  }
+}
+
 .subtitle-upper {
   text-transform: none !important;
   color: $color-darkpurple;
