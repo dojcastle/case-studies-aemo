@@ -468,9 +468,9 @@
     line-height: normal !important; 
   }
 
-  // u {
-  //   color: $color-primary;
-  // }
+  u {
+    text-decoration: none !important;
+  }
 
   small {
     @include font-body($size: $font-size-subheading2, $weight: $font-weight-body);
