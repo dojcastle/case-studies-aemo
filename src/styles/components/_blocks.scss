@@ -420,3 +420,34 @@
         display: none;
     }
 }
+
+.btn-primary {
+    &.link-aemo {
+        transition:all .3s ease-in;
+        font-size: 42px;
+        color: #452E66;
+        height: 80px;
+        width: 445px;
+        background: linear-gradient( 90deg,#F6AAAA 0%,#CE89D6 100%);
+        border: none;
+        border-radius: 12px;
+        &:hover {
+            transition:all .3s ease-out;
+        }
+    }
+    
+    @include media-breakpoint-down(sm) { 
+        &.link-aemo {
+            font-size: 22px;
+            width: 100%;
+            height: auto;
+            line-height: 1.6;
+        }
+    }
+}
+
+.bg-purple {
+    &.img-fixed img {
+        height: max-content;
+    }
+}
